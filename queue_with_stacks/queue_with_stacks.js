@@ -71,5 +71,11 @@ class Psuedoqueue {
         while(this.stackB.length < this.stackA.length) {
             this.stackB.push(stackA.pop())
         }
-    } 
+    }
+    
+    dequeue() {
+        if(this.stackB.length !== 0) {
+            this.stackB.pop();
+        }
+    }
 }
